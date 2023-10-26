@@ -1,0 +1,43 @@
+# Site settings
+title: Your Site Title
+description: A brief description of your site
+baseurl: "" # If your site is not hosted under a subpath, leave this empty
+
+# Build settings
+markdown: kramdown
+theme: minima # You can specify your preferred Jekyll theme here
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Permalinks
+permalink: pretty # Generates clean URLs without the file extension
+
+# Navigation links
+menu:
+  main:
+    - title: Home
+      url: /
+    - title: About
+      url: /about
+
+# Exclude files or directories from being processed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - _site
+
+# Collections (if you're using them)
+collections:
+  posts:
+    output: true
+    permalink: /posts/:title
+
+# Development server settings
+server_port: 4000
+incremental: true # For faster rebuilds during development
+
+# GitHub Pages settings
+remote_theme: jekyll/minima # Specify the GitHub Pages theme (if applicable)
